@@ -1,7 +1,27 @@
 body {
   margin: 0;
   padding: 0; 
+  background-color: #1d2634;
+  font-family: 'Inter', sans-serif;
+  color: #9e9ea4;
 }
+
+.material-icons-outlined {
+  vertical-align: middle;
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Adjust size as needed */
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
 
 .grid-container {
   display: grid;
@@ -13,11 +33,15 @@ body {
   height: 100vh;
 }
 
-/*----------Header ----------------*/
+/*----------Header----------------*/
 .header {
   grid-area: header;
   height: 70px;
-  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35); 
 }
 
 
@@ -25,12 +49,17 @@ body {
 #sidebar {
  grid-area: sidebar;
  height: 100%;
- background-color: #f0f0f0;  
+ background-color: #263043;
+ overflow-y: auto;
+ transition: all 0.5s ease-in-out;
+ -webkit-transition: all 0.5s ease-in-out;  
+
 }
 
 
 /*----------Main----------------*/
 .main-container {
   grid-area: main;
-  background-color: beige;
+  padding : 20px 20px;
+  color: rgba (255, 255, 255, 0.95); 
 }
